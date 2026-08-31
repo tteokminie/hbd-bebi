@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fffaf7;
+  color: #3f2a2a;
+}
+
+.welcome-screen {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd6df, #fff3e6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.gift-box {
+  font-size: 80px;
+  animation: bounce 2s infinite;
+}
+
+.small-text {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  color: #a66a6a;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(45px, 8vw, 90px);
+  line-height: 1;
+}
+
+.welcome-message {
+  max-width: 500px;
+  margin: 25px 0;
+  line-height: 1.7;
+}
+
+button {
+  border: none;
+  padding: 15px 28px;
+  border-radius: 50px;
+  background: #c75b6d;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
